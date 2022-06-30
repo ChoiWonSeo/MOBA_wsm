@@ -28,9 +28,9 @@ html body {
 div.input-append.span12 {
   text-align: center;
 }
-a:link {
+/* a:link {
   color: lightblue;
-}
+} */
 
 /* 라이브러리 */
 td {
