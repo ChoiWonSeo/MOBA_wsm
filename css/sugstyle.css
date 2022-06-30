@@ -1,0 +1,533 @@
+html {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pagination {
+  justify-content: center;
+}
+.pagination > li > a {
+  margin: 0 5px;
+}
+html body {
+  margin-top: 15%;
+}
+div.input-append.span12 {
+  text-align: center;
+}
+a:link {
+  color: lightblue;
+}
+
+/* 라이브러리 */
+td {
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+.con {
+  margin: 0 auto;
+}
+
+.img-box > img {
+  width: 100%;
+  display: block;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.cell {
+  float: left;
+  box-sizing: border-box;
+}
+
+.cell-right {
+  float: right;
+  box-sizing: border-box;
+}
+
+.margin-0-auto {
+  margin: 0 auto;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.line-height-0-ch-only {
+  line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+  line-height: normal;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute-left {
+  position: absolute;
+  left: 0;
+}
+
+.absolute-right {
+  position: absolute;
+  right: 0;
+}
+
+.absolute-middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 커스텀 */
+/* 반응형 레이아웃 */
+.con {
+  max-width: 950px;
+}
+
+.con-min-width {
+  min-width: 320px;
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.table-common > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-common .btn-box {
+  text-align: center;
+}
+
+.table-common > table th,
+.table-common > table td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.article-list table {
+  border: none;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+}
+
+.article-list > table th,
+.article-list > table td {
+  border: none;
+}
+
+.article-list > table td {
+  border-bottom: 1px solid lightgray;
+}
+
+.article-list > table thead {
+  border-bottom: 2px solid lightgray;
+  background-color: #f5f5f5;
+}
+
+.article-detail {
+  border: 2px solid lightgray;
+}
+
+.article-detail > table {
+  border: none;
+  width: calc(100% - 100px);
+}
+
+.article-detail > table th,
+.article-detail > table td {
+  border: none;
+}
+
+.article-detail > table tr:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+}
+
+.article-detail > table tr:not(.article-body),
+.article-detail > table tr:not(.article-body) > td {
+  height: 20px;
+  font-size: 0.8rem;
+}
+
+.article-detail > table tr.article-title > td {
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.article-detail > table td:last-child {
+  padding-right: 100px;
+}
+
+.article-detail > .article-writer {
+  width: 100px;
+  height: 102px;
+  background-color: lightgray;
+  border-bottom: 1px solid lightgray;
+  text-align: center;
+}
+
+.article-detail > .article-writer .writer-icon {
+  margin: 0 auto;
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.reply {
+  margin-top: 20px;
+  border: 2px solid lightgray;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.reply-form {
+  padding: 10px;
+}
+
+.reply-form > form input[type="text"] {
+  width: 200px;
+}
+
+.reply-form > form textarea {
+  width: calc(100% - 100px);
+  min-height: 40px;
+}
+
+.reply-form > form input[type="submit"] {
+  width: 80px;
+  height: 40px;
+  transform: translatey(-40%);
+}
+
+.reply-form > form > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.reply-list > table {
+  border: none;
+}
+
+.reply-list > table th {
+  display: none;
+}
+
+.reply-list > table td {
+  border: none;
+}
+
+.reply-list > table tr:nth-child(2n + 1) {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.reply-list > table td:first-child {
+  font-weight: bold;
+}
+
+.reply-list > table td:first-child::after {
+  content: " : ";
+  font-weight: bold;
+}
+
+#custom-search-form {
+  margin: 0;
+  margin-top: 5px;
+  padding: 0;
+}
+
+#custom-search-form .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#custom-search-form button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.search-query:focus + button {
+  z-index: 3;
+}
+
+
+/* 메뉴바 */
+.nav-toggle {
+  display: none;  /* 안 보이게 하자 */
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu i {
+  text-decoration: none;
+}
+
+.nav-list {
+  display: none;
+  column-gap: 1.25rem;  /*20px*/
+}
+
+.ani-item {
+  text-decoration: none;
+}
+
+.logo2 {
+  display: none;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.profile {
+  display: none;
+}
+
+.minifooter {
+  display: none;
+}
+
+.btn {
+  display: none;
+}
+
+.menu i {
+  display: none;
+}
+
+@media screen and (max-width: 1508px) {  /* width가 600px가 되면 펼쳐짐 */
+  .nav-toggle {
+      display: block;
+      cursor: pointer;
+      position: absolute;  /* 위치 무시. 로고 가운데 정렬 */
+  }
+
+  .nav-list {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 360px;
+      flex-direction: column;
+      background-color: #fff;
+      height: 0;
+      overflow: hidden;
+      transition: 0.17s;
+      border: 0.3px solid #fff;
+  }
+
+  .nav-link {
+      color: #1d1d1d;
+      text-decoration: none;
+      display: block;  /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자 */
+  }
+
+  .logo2 {
+      display: block;
+      width: 120px;
+  }
+
+  .profile {
+      width: 120px;
+      border-radius: 50%;
+      border: 1px solid #1d1d1d;
+      top: 90px;
+      position: absolute;
+      left: 30px;
+      display: block;
+  }
+
+  .pro {
+      width: 300px;
+      height: 130px;
+      background: #ffdc84;
+      margin-top: 150px;
+      margin-left: 16px;
+      border-radius: 16px;
+      text-decoration: none;
+  }
+
+  .btn {
+      width: 200px;
+      margin: 30px 0px 20px 68px;
+      /* background-color: #1d1d1d; */
+      /* color: #fff; */
+      display: block;
+      height: 40px;
+      border-radius: 16px;
+  }
+
+  .nav-item {
+      padding: 0.5rem 1rem;  /* 위오아왼 */
+      text-align: center;  /* 가운데 정렬 */
+      border-bottom: 1px solid #ffdc84;  /* 아래 선 */
+  }
+
+  .minifooter {
+      display: block;
+  }
+
+  .minifooter li {
+      display: block;
+      display: inline-block;
+      position: relative;
+      height: 100%;
+      list-style: none;
+      margin: 40px auto;
+      left: 56px;
+  }
+
+  .nav-footer {
+      color: #1d1d1d;
+  }
+
+  .show-menu {
+      z-index: 999;
+      height: 681px;
+  }
+}
+
+@media screen and (max-width: 479px) {  /* width가 600px가 되면 펼쳐짐 */
+  .nav-toggle {
+      display: block;
+      cursor: pointer;
+      position: absolute;  /* 위치 무시. 로고 가운데 정렬 */
+  }
+
+  .nav-list {
+      position: absolute;
+      top: 47px;
+  }
+
+  .nav-link {
+      display: block;  /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자 */
+  }
+}
+/*--------------------------------------------------------------------------*/
+@media screen and (max-width: 1508px) {
+  .nav-toggle {
+      display: block;
+      cursor: pointer;
+      position: absolute;  /* 위치 무시. 로고 가운데 정렬 */
+      font-size: 50px;
+      left: 7px;
+      top: 5px;
+  }
+
+  .search {
+      margin-top: 60px;
+  }
+
+  #logo {
+      display: none;
+  }
+
+  #conversation {
+      display: none;
+  }
+  
+  #bell {
+      display: none;
+  }
+  
+  .img-circle {
+      display: none;
+  }
+
+  /* .btndiv{
+    background: #000;
+  } */
+}
+
+
+/*----------------------------------------------------------*/
+.bx-plus {
+  font-size: 90px;
+  border-radius: 50%;
+  background: #F6EDD6;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  box-shadow: 4px 4px 4px 4px #7d7d7d35;
+}
+
+.bx-plus:hover {
+  transition: 0.15s;
+  transform: rotate( 45deg );
+}
+
+@media screen and (max-width: 1023px) {
+  .bx-plus {
+      right: 40px;
+      font-size: 80px;
+      bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bx-plus {
+      right: 30px;
+      font-size: 73px;
+      bottom: 30px;
+  }
+}

@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu i {
+    text-decoration: none;
+}
+
+.nav-list {
+    display: none;
+    column-gap: 1.25rem;  /*20px*/
+}
+
+.nav-menu ul {
+    list-style: none;
+}
+
+.nav-menu i {
+    text-decoration: none;
+}
+
+.nav-list {
+    display: none;
+    column-gap: 1.25rem;  /*20px*/
+}
+
+
+.logo2 {
+    display: none;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.profile {
+    display: none;
+}
+
+.minifooter {
+    display: none;
+}
+
+.btn {
+    display: none;
+}
+
+.menu i {
+    display: none;
+}
+
+.nav-toggle {
+    display: block;
+    font-size: 56px;
+    cursor: pointer;
+    position: absolute;  /* 위치 무시. 로고 가운데 정렬 */
+    left: 7px;
+    top: 5px;
+}
+
+.nav-list {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 370px;
+    flex-direction: column;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.17s;
+    border: 0.3px solid #fff;
+}
+
+.nav-link {
+    color: #1d1d1d;
+    text-decoration: none;
+    display: block;  /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자 */
+}
+
+.logo2 {
+    display: block;
+    width: 120px;
+}
+
+.profile {
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #1d1d1d;
+    top: 90px;
+    position: absolute;
+    left: 30px;
+    display: block;
+}
+
+.pro {
+    width: 300px;
+    height: 130px;
+    background: #ffdc84;
+    margin-top: 150px;
+    margin-left: 16px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+.btn {
+    width: 200px;
+    margin: 30px 0px 20px 68px;
+    background-color: #1d1d1d;
+    color: #fff;
+    display: block;
+    height: 40px;
+    border-radius: 16px;
+}
+
+.nav-item {
+    padding: 0.5rem 1rem;  /* 위오아왼 */
+    text-align: center;  /* 가운데 정렬 */
+    border-bottom: 1px solid #ffdc84;  /* 아래 선 */
+}
+
+.minifooter {
+    display: block;
+}
+
+.minifooter li {
+    display: block;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    list-style: none;
+    margin: 40px auto;
+    left: 56px;
+}
+
+.nav-footer {
+    color: #1d1d1d;
+}
+
+.show-menu {
+    z-index: 999;
+    height: 681px;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+
+@media screen and (max-width: 479px) {  /* width가 600px가 되면 펼쳐짐 */
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute;  /* 위치 무시. 로고 가운데 정렬 */
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 47px;
+    }
+
+    .nav-link {
+        display: block;  /* 링크의 너비: 컨텐츠 -> nav-item 만큼 늘리자 */
+    }
+}
+
+.search {
+    position: relative;
+    width: 750px;
+    margin-left: 25%;
+    margin-top: 60px;
+}
+
+input {
+    width: 100%;
+    border: 2.2px solid #ffdc84;
+    border-radius: 30px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+#line2 {
+    position: absolute;
+    height: 35px;
+    width: 3px;
+    border-left: 2px solid #cdcdcd;
+    top: 3px;
+    right: 46px;
+}
+
+#search-icon {
+    position : absolute;
+    font-size: 27px;
+    top: 8.2px;
+    right: 6.7px;
+    margin: 0;
+}
+
+.bx-menu:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1508px) {
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute;  /* 위치 무시. 로고 가운데 정렬 */
+        font-size: 50px;
+        left: 7px;
+        top: 5px;
+    }
+
+    .search {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .search {
+        position: relative;
+        width: 480px;
+        margin: 60px auto;
+    }
+    
+    input {
+        width: 100%;
+        border: 2px solid #ffdc84;
+        border-radius: 30px;
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute;  /* 위치 무시. 로고 가운데 정렬 */
+        font-size: 35px;
+        left: 7px;
+        top: 5px;
+    }
+
+    .search {
+        position: relative;
+        width: 400px;
+        margin: 60px auto;
+    }
+    
+    input {
+        width: 100%;
+        border: 2px solid #ffdc84;
+        border-radius: 30px;
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+}
+
+@media screen and (max-width: 479px) {
+    .search {
+        position: relative;
+        width: 320px;
+        margin: 60px auto;
+    }
+
+    input {
+        width: 100%;
+        border: 2px solid #ffdc84;
+        border-radius: 30px;
+        padding: 10px 12px;
+        font-size: 11px;
+    }
+
+    #line2 {
+        position: absolute;
+        height: 28px;
+    }
+}
+
+
+#columns {
+    column-width: 350px;
+    /* border: 5px solid rebeccapurple; */
+    column-gap: 15px;
+    margin: 67px 30px 0px 30px;
+}
+
+@media screen and (max-width: 1023px) {
+    #columns {
+        column-width: 300px;
+        column-gap: 15px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #columns {
+        column-width: 250px;
+        column-gap: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    #columns {
+        column-width: 150px;
+        column-gap: 15px;
+        margin-top: 30px;
+    }
+}
+
+#columns figure {
+    display: inline-block;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 16px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 16px;
+    /* box-shadow: 2px 2px 5px rgb(150, 150, 150); */
+}
+
+#columns figure img {
+    width: 100%;
+}
+
+#columns figure figcaption {
+    border-top: 1px solid rgb(209, 209, 209);
+    padding: 10px;
+    margin-top: 11px;
+}
+
+.bx-plus {
+    font-size: 90px;
+    border-radius: 50%;
+    background: #F6EDD6;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    box-shadow: 4px 4px 4px 4px #7d7d7d35;
+}
+
+.bx-plus:hover {
+    transition: 0.15s;
+    transform: rotate( 45deg );
+}
+
+@media screen and (max-width: 1023px) {
+    .bx-plus {
+        right: 40px;
+        font-size: 80px;
+        bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bx-plus {
+        right: 30px;
+        font-size: 73px;
+        bottom: 30px;
+    }
+}
