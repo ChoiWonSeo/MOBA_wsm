@@ -14,10 +14,10 @@
         김민영 최원서
 ---
 - ## 메인화면
-    > ![그림](./img/readme1.jpg)
+    > ![그림](../img/readme1.jpg)
 
 - ## 마이페이지
-    > ![그림](./img/readme2.jpg)
+    > ![그림](../img/readme2.jpg)
 
 - ## 문의사항페이지
-    > ![그림](./img/readme3.jpg)
+    > ![그림](../img/readme3.jpg)
