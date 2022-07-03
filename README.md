@@ -14,10 +14,13 @@
         김민영 최원서
 ---
 - ## 메인화면
-    > ![그림](../img/readme1.jpg)
+    > ![readme1](https://user-images.githubusercontent.com/90046611/177041906-d23ab5fd-b0cb-453c-acb8-7f4dcdc8b1d4.jpg)
+
 
 - ## 마이페이지
-    > ![그림](../img/readme2.jpg)
+    > ![readme2](https://user-images.githubusercontent.com/90046611/177041922-0530d737-d1f9-42c7-891d-9d306a195f98.jpg)
+
 
 - ## 문의사항페이지
-    > ![그림](../img/readme3.jpg)
+    > ![readme3](https://user-images.githubusercontent.com/90046611/177041933-ae11be04-1c24-4400-b948-d27d0da564e1.jpg)
+
